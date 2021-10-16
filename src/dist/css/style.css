@@ -1,0 +1,141 @@
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Karla:wght@400;800&family=Mulish:wght@200;300;400;500;600;700;900&display=swap');
+/* Basic Setup starts */
+*{
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+html{
+	scroll-behavior: smooth;
+	font-size: 100%;
+}
+body{
+    font-family: 'Mulish', sans-serif;
+}
+
+h2,h3,h4,h5,h6,p,a{
+	font-family: 'Mulish', sans-serif;
+}
+ul{
+	list-style: none !important;
+	padding-left: 0 !important;
+}
+a{
+	text-decoration: none !important;
+	font-size: 1.6rem;
+}
+p{
+	color: #707070;
+	font-size: 1.6rem;
+}
+
+.form-control:focus {
+	box-shadow: none !important;
+	border: none !important;
+}
+.form-check-input:focus {
+	outline: 0;
+	box-shadow: none !important;
+}
+/* Basic Setup ends */
+
+/* Reusable component starts */
+.pt-100{
+	padding-top: 10rem;
+}
+.pb-60{
+	padding-bottom: 6rem;
+}
+/* Reusable component ends */
+
+/* Footer section starts */
+
+#footer {
+	background: #E6E6E6;
+}
+.footer-container {
+	max-width: 126rem;
+}
+.footer-top {
+	padding-top: 7rem;
+	padding-bottom: 4.5rem;
+}
+#footer a {
+    text-decoration: none;
+}
+.footer-social ul li a {
+	background: #FF8F7C;
+	width: 4rem;
+	height: 4rem;
+	display: inline-block;
+	line-height: 4rem;
+	font-size: 2.2rem;
+	border-radius: 50%;
+	text-align: center;
+	padding: 0 !important;
+	color: #fff;
+	margin: 0 .5rem;
+}
+/* .footer-widget.logo-widget {
+	text-align: center;
+} */
+.social-list {
+	align-items: center;
+	/* justify-content: center; */
+}
+.footer-widget img {
+	width: 15rem;
+	height: auto;
+	margin-left: 8.5rem;
+}
+.footer-widget .footer-logo {
+    margin-bottom: 2.5rem;
+}
+.footer-widget p {
+    line-height: 1.8;
+    font-size: 1.7rem;
+    font-weight: 400;
+}
+
+#footer ul {
+    padding-left: 0;
+}
+
+.footer-social ul.social-list li a {
+    padding: 0 .8rem;
+    transition: .4s ease-in-out;
+}
+
+.footer-social ul.social-list li a:hover {
+    background-color: #440F26;
+    color: #ffffff;
+}
+
+.footer-social {
+    margin-top: 2rem;
+}
+
+.footer-widget h3 {
+	font-size: 2.5rem;
+	padding-bottom: 1.5rem;
+	color: #3D3B3B;
+	font-weight: 700;
+}
+.footer-widget ul.footer-link li {
+	margin: 1rem 0;
+}
+.footer-widget ul.footer-link li a {
+	color: #707070;
+	font-size: 2.2rem;
+	font-weight: 500;
+}
+.footer-widget ul.footer-link li:hover a {
+    color: #FF8F7C !important;
+    letter-spacing: .1rem;
+}
+.footer-widget ul.footer-link li a {
+    transition: .5s ease-in-out;
+}
+/* Footer section ends */
