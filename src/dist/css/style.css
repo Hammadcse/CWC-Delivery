@@ -21,6 +21,7 @@ h2,h3,h4,h5,h6,p,a{
 ul{
 	list-style: none !important;
 	padding-left: 0 !important;
+	margin-bottom: 0;
 }
 a{
 	text-decoration: none !important;
@@ -51,16 +52,22 @@ p{
 /* Reusable component ends */
 
 /* Footer section starts */
-
 #footer {
-	background: #E6E6E6;
+	background: #2E2E2E;
+	color: #ffffff;
 }
-.footer-container {
-	max-width: 126rem;
+#footer li a {
+	color: #ffffff;
+}
+.footer-top .left-inner li a {
+	font-size: 1rem;
+	font-weight: 500;
+}
+.hide{
+	opacity: 0;
 }
 .footer-top {
-	padding-top: 7rem;
-	padding-bottom: 4.5rem;
+	padding: 2.5rem 0;
 }
 #footer a {
     text-decoration: none;
@@ -118,22 +125,23 @@ p{
 }
 
 .footer-widget h3 {
-	font-size: 2.5rem;
-	padding-bottom: 1.5rem;
-	color: #3D3B3B;
+	font-size: 1.4rem;
+	padding-bottom: 1rem;
 	font-weight: 700;
+	margin-bottom: 0;
 }
 .footer-widget ul.footer-link li {
-	margin: 1rem 0;
+	margin: 0.2rem 0;
 }
 .footer-widget ul.footer-link li a {
-	color: #707070;
-	font-size: 2.2rem;
+	font-size: 1.2rem;
 	font-weight: 500;
+	color: #ffffff;
+	line-height: 36px;
 }
 .footer-widget ul.footer-link li:hover a {
-    color: #FF8F7C !important;
-    letter-spacing: .1rem;
+	color: #E92236 !important;
+	letter-spacing: .1rem;
 }
 .footer-widget ul.footer-link li a {
     transition: .5s ease-in-out;
