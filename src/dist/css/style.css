@@ -51,7 +51,68 @@ ul{
 .pb-60{
 	padding-bottom: 6rem;
 }
+.ptb-40{
+	padding-top: 4rem;
+	padding-bottom: 4rem;
+}
 /* Reusable component ends */
+
+/* Delivery section starts */
+#delivery .row.counter-row {
+	margin-bottom: 2rem;
+}
+#delivery .counter-item h2 {
+	color: #E92236;
+	font-weight: 700;
+	font-size: 1.8rem;
+	margin-bottom: 0;
+}
+#delivery .counter-item span {
+	color: #2E2E2E;
+	font-size: .9rem;
+	display: block;
+}
+#delivery .heading {
+	text-align: center;
+	margin-bottom: 1.3rem;
+}
+#delivery .heading p {
+	margin-bottom: 0;
+	font-size: 1rem;
+}
+#delivery .delivery-form .formInput .form-select {
+	background-color: #DDE2E2;
+	padding-top: .6rem;
+	padding-bottom: .6rem;
+	box-shadow: none !important;
+	border: 0 !important;
+}
+#delivery .delivery-form .checkBtn {
+	display: block;
+	margin: 0 auto;
+	background: #E92236 !important;
+	border-color: #E92236 !important;
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: .4rem 2.5rem;
+	margin-top: 1rem;
+	margin-bottom: .5rem;
+	line-height: 2rem;
+	text-align: center;
+	box-shadow: none !important;
+}
+#delivery .delivery-form .see-more-info p {
+	font-size: 1rem;
+	text-align: center;
+	margin-bottom: 0;
+}
+#delivery .delivery-form .see-more-info a {
+	font-size: 1rem;
+	font-weight: 600;
+	color: #E92236;
+	margin-left: .3rem;
+}
+/* Delivery section ends */
 
 /* Footer section starts */
 #footer {
