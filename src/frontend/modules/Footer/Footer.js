@@ -66,21 +66,21 @@ const Footer = () => {
                         </div>
                 </div>
                 <div className="row footer-top-row2">
+                        <div className="col-md-6">
+                            <ul className="left-inner d-flex align-items-center justify-content-between">
+                                <li><Link to="/"><img src={FooterLogo} alt="logo" /></Link></li>
+                                <li className="d-flex align-items-center">
+                                    <span>Call Us:</span>
+                                    <Link>0170000000</Link>
+                                </li>
+                                <li className="d-flex align-items-center">
+                                    <span>Email:</span>
+                                    <Link>CWC@gmail.com</Link>
+                                </li>
+                            </ul>
+                        </div>
                     <div className="col-md-6">
-                        <ul className="left-inner d-flex align-items-center">
-                            <li><Link to="/"><img src={FooterLogo} alt="logo"/></Link></li>
-                            <li className="d-flex align-items-center">
-                                <span>Call Us:</span>
-                                <Link>0170000000</Link>
-                            </li>
-                            <li className="d-flex align-items-center">
-                                <span>Email:</span>
-                                <Link>CWC@gmail.com</Link>
-                            </li>
-                        </ul>
-                    </div>
-                    <div className="col-md-6">
-                        <div className="right-inner d-flex align-items-center">
+                            <div className="right-inner d-flex align-items-center justify-content-between">
                             <Link to="/"><img src={FooterIcon} alt="img" /></Link>
                             <ul className="footer-social d-flex align-items-center">
                                 <li><Link to="/"><i className="fab fa-facebook"></i></Link></li>
@@ -91,7 +91,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer-bottom d-flex align-items-center">
+            <div className="footer-bottom d-flex align-items-center justify-content-center">
                 <span>Copyright <span className="cpy-symbol">&copy;</span> 2021 CWC. All rights reserved.</span>
                 <Link to="/">Privacy Policy</Link>
                 <Link to="/">Terms and Condition</Link>
