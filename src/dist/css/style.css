@@ -55,6 +55,18 @@ ul{
 	padding-top: 4rem;
 	padding-bottom: 4rem;
 }
+.primary-btn{
+	display: block;
+	background: #E92236 !important;
+	border-color: #E92236 !important;
+	color: #ffffff !important;
+	font-size: 1.2rem;
+	font-weight: 600;
+	padding: .4rem 2.5rem;
+	text-align: center;
+	box-shadow: none !important;
+	border-radius: .25rem;
+}
 /* Reusable component ends */
 
 /* Delivery section starts */
@@ -113,6 +125,36 @@ ul{
 	margin-left: .3rem;
 }
 /* Delivery section ends */
+
+/* About section starts */
+#about .about-wrap{
+	background-image: url(../images//about//about-bg.png);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+	width: 100%;
+	height: auto;
+}
+#about .about-text {
+	padding: 5.5rem 0;
+}
+#about .about-text h2 {
+	color: #FFFFFF;
+	font-size: 1.8rem;
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+}
+#about .about-text p {
+	color: #ffffff;
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+}
+#about .about-text .about-btn {
+	width: 125px;
+	padding: .6rem 1rem;
+	font-size: 1.1rem;
+}
+/* About section ends */
 
 /* Footer section starts */
 #footer {
