@@ -7,47 +7,34 @@ export default function CompanyInfoForm() {
             <div className="container">
                 <div className="row">
                     <div className="col-md-6">
-                            <div className="delivery-form">
-                                <Form className="for-wrap">
+                            <div className="company-form">
+                                <h2 className="section-title">Company Info</h2>
+                                <Form className="form-wrap">
                                     <div className="formInput">
                                         <Row className="">
-                                            <Form.Group as={Col} className="pe-3 mb-md-4 mb-2" controlId="formGridProductWeight">
-                                                <Form.Label>Product weight</Form.Label>
-                                                <Form.Select aria-label="Default select example">
-                                                    <option></option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </Form.Select>
+                                            <Form.Group as={Col} className="pe-3 mb-md-4 mb-2" controlId="formGridCompanyName">
+                                                <Form.Label>Company Name</Form.Label>
+                                                <Form.Control type="name" placeholder="Enter Company Name" />
                                             </Form.Group>
-                                            <Form.Group as={Col} className="ps-3 mb-md-4 mb-2" controlId="formGridProductPrice">
-                                                <Form.Label>Product Price</Form.Label>
-                                                <Form.Select aria-label="Default select example">
-                                                    <option></option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </Form.Select>
+                                            <Form.Group as={Col} className="ps-3 mb-md-4 mb-2" controlId="formGridSiteUrl">
+                                                <Form.Label>Site URL(Facebook, Web)</Form.Label>
+                                                <Form.Control type="text" placeholder="Enter your Site Url" />
                                             </Form.Group>
                                         </Row>
                                         <Row className="">
-                                            <Form.Group as={Col} className="pe-3 mb-md-3 mb-2" controlId="formGridPickupArea">
-                                                <Form.Label>Pickup Area</Form.Label>
-                                                <Form.Select aria-label="Default select example">
-                                                    <option></option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </Form.Select>
+                                            <Form.Group as={Col} className="pe-3 mb-md-3 mb-2" controlId="formGridCity">
+                                                <Form.Label>City</Form.Label>
+                                                <Form.Control type="text" placeholder="Enter your City name" />
                                             </Form.Group>
-                                            <Form.Group as={Col} className="ps-3 mb-md-3 mb-2" controlId="formGridDeliveryArea">
-                                                <Form.Label>Delivery Area</Form.Label>
-                                                <Form.Select aria-label="Default select example">
-                                                    <option></option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
-                                                </Form.Select>
+                                            <Form.Group as={Col} className="ps-3 mb-md-3 mb-2" controlId="formGridZone">
+                                                <Form.Label>Zone</Form.Label>
+                                                <Form.Control type="number" placeholder="Enter your Zone" />
+                                            </Form.Group>
+                                        </Row>
+                                        <Row className="">
+                                            <Form.Group className="mb-md-3" controlId="formGridCity">
+                                                <Form.Label>City</Form.Label>
+                                                <Form.Control type="text" placeholder="Enter your City name" />
                                             </Form.Group>
                                         </Row>
                                         <Button className="checkBtn" type="submit">
