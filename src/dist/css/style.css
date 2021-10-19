@@ -1,11 +1,20 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Karla:wght@400;800&family=Mulish:wght@200;300;400;500;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap');
 /* Basic Setup starts */
 *{
 	margin: 0;
 	padding: 0;
 	outline: 0;
 	box-sizing: border-box;
+}
+:root {
+	--primary-color: #242020;
+	--gray-color: #E8E3E3;
+	--white-color: #fff;
+	--red-color: #E92236;
+  }
+.bg-gray-color{
+	background: var(--gray-color) !important;
 }
 html{
 	scroll-behavior: smooth;
@@ -25,15 +34,12 @@ ul{
 }
 a{
 	text-decoration: none !important;
-	font-size: 1.6rem;
 }
-p{
-	color: #707070;
-	font-size: 1.6rem;
-}
+
 ul{
 	margin-bottom: 0;
 }
+
 .form-control:focus {
 	box-shadow: none !important;
 	border: none !important;
@@ -68,6 +74,148 @@ ul{
 	border-radius: .25rem;
 }
 /* Reusable component ends */
+
+
+/* Header */
+#header {
+	border-bottom: 1px solid #eee;
+	box-shadow: 0px 0px 10px #d6d6d675;
+}
+.nav-item.dropdown {
+	padding-right: 15px;
+}
+.header-main .nav-link {
+	color: #242020;
+	font-size: 1.1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 0 8px;
+	padding-top: 35px;
+}
+.header-main .nav-link:last-child {
+	padding-right: 0px !important;
+	margin-right: 0px !important;
+}
+#responsive-navbar-nav {
+	margin-bottom: 20px;
+	margin-top: -10px;
+}
+.header-main .nav-link:hover{
+	color: var(--red-color);
+}
+.active.nav-link {
+	background: var(--red-color);
+	color: #fff !important;
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+#responsive-navbar-nav .dropdown-menu {
+	position: absolute;
+	width: 400px;
+	padding: 15px;
+	right: 0 !important;
+	left: auto;
+}
+#responsive-navbar-nav .dropdown-menu a {
+	color: var(--red-color);
+	font-size: .9rem;
+}
+/* Banner Css */
+.banner-section{
+	position: relative;
+	background: url(../images/banner-bg.png) no-repeat;
+	background-size: contain;
+	background-position: left bottom;
+	min-height: 500px;
+	width: 100%;
+}
+.banner-title {
+	color: var(--red-color);
+	font-size: 50px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin-bottom: 20px;
+}
+.banner-inp-wrapper {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.banner-search-inp {
+	height: 55px;
+	background: #DDE2E2;
+	border: 1px solid #ddd;
+	border-top-left-radius: 5px;
+	border-bottom-left-radius: 5px;
+	margin-right: 8px;
+	padding: 15px;
+	width: 70%;
+}
+.banner-submit-btn {
+	background: var(--red-color);
+	height: 55px;
+	border: 0;
+	padding: 15px;
+	color: #fff;
+	font-weight: 600;
+	border-top-right-radius: 5px;
+	border-bottom-right-radius: 5px;
+	font-size: 1.1rem;
+}
+.banner-txt {
+	margin: 0;
+	font-size: 1rem;
+	font-weight: 500;
+}
+.section-title{
+	color: var(--primary-color);
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: normal;
+}
+/* Service Section */
+.service-section {
+	border-top-right-radius: 150px;
+}
+.service-title{
+	color: var(--primary-color);
+	font-size: 1.2rem;
+	font-weight: normal;
+}
+.service-para.card-text {
+	color: var(--primary-color);
+	font-size: 1rem;
+}
+.card-service-img-div {
+	background: var(--gray-color);
+	display: inline-block;
+	height: 75px;
+	width: 75px;
+	border-radius: 50%;
+	position: relative;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+.service-card{
+	position: relative;
+	transition: all ease 0.5s;
+}
+.service-card:hover{
+	background: var(--red-color);
+	color: var(--white-color);
+}
+.service-card:hover .service-para.card-text{
+	color: var(--white-color);
+}
+.service-card:hover .service-title{
+	color: var(--white-color);
+}
+.card-service-img {
+	width: 85% !important;
+	margin: 5px auto;
+}
 
 /* Delivery section starts */
 #delivery .row.counter-row {
@@ -105,7 +253,7 @@ ul{
 	background: #E92236 !important;
 	border-color: #E92236 !important;
 	font-size: 1.2rem;
-	font-weight: 600;
+	font-weight: 700;
 	padding: .4rem 2.5rem;
 	margin-top: 1rem;
 	margin-bottom: .5rem;
@@ -156,6 +304,44 @@ ul{
 }
 /* About section ends */
 
+/* Testimonial */
+.testimonial-card.card {
+	border-bottom: 3px solid #e92236;
+	border-radius: 5px;
+}
+.testimonial-img-div {
+	display: flex;
+	align-items: center;
+}
+.testimonial-img {
+	width: 70px;
+	margin-right: 20px;
+}
+.author-name {
+	font-size: 16px;
+	font-weight: 700;
+	margin: 0;
+	text-align: left;
+}
+.author-page {
+	font-size: 14px;
+	margin: 0;
+	text-align: left;
+}
+/* Brand Section */
+.brand-img-div {
+	height: 50px;
+	border: 1px solid #eee;
+	margin: 8px 5px 0px;
+	position: relative;
+	border-radius: 4px;
+}
+.brand-img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
 /* Footer section starts */
 #footer {
 	background: #2E2E2E;
@@ -184,7 +370,7 @@ ul{
     text-decoration: none;
 }
 .footer-social ul li a {
-	background: #FF8F7C;
+	background: var(--red-color);
 	width: 4rem;
 	height: 4rem;
 	display: inline-block;
@@ -252,6 +438,14 @@ ul{
 }
 .footer-top-row2 .left-inner {
 	margin-top: 1rem !important;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.footer-top-row2 .right-inner {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
 }
 .footer-widget h3 {
 	font-size: 1.4rem;
@@ -269,13 +463,16 @@ ul{
 	line-height: 36px;
 }
 .footer-widget ul.footer-link li:hover a {
-	color: #E92236 !important;
-	letter-spacing: .1rem;
+	color: var(--red-color) !important;
+	text-decoration: underline !important;
 }
 .footer-widget ul.footer-link li a {
-    transition: .5s ease-in-out;
+    transition: .3s ease all;
 }
 .footer-bottom {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	padding: 1rem 0;
 	border-top: 1px solid #80808099;
 }
@@ -291,3 +488,40 @@ ul{
 	margin-right: .3rem;
 }
 /* Footer section ends */
+
+/************* Charges page starts ***********/
+#charges .charges-baner img {
+	width: 100%;
+	object-fit: cover;
+	margin-bottom: 2.5rem;
+}
+#charges .heading h2 {
+	margin-bottom: 2.5rem;
+}
+.charges-tab-wrapper ul.nav-tabs {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	border: 0;
+}
+.charges-tab-wrapper .nav-tabs .nav-link.active {
+	color: #000000 !important;
+	background-color: transparent;
+	border: none;
+	font-weight: 700;
+	font-size: 1.2rem;
+	border-bottom: 3px solid #E92236;
+	border-radius: 0;
+	padding: 0;
+	padding-bottom: 0.4rem;
+}
+.charges-tab-wrapper .tab-content table tr td {
+	font-weight: 600;
+}
+.charges-tab-wrapper .charge-type h6 {
+	font-weight: 700;
+}
+.charges-tab-wrapper {
+	margin-bottom: 2.5rem;
+}
+/************* Charges page ends ***********/

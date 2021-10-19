@@ -1,3 +1,4 @@
+
 import React from 'react';
 import { Link } from "react-router-dom";
 import FooterLogo from '../../../dist/images/logo.png'
@@ -14,7 +15,7 @@ const Footer = () => {
                         <div className="row">
                             <div className="col-md-6">
                                 <div className="footer-widget">
-                                    <h3>About CWE </h3>
+                                    <h3 class="h3-first-child">About CWE </h3>
                                     <ul className="footer-link">
                                         <li><Link to="/">Careers at</Link></li>
                                         <li><Link to="/">Customer support</Link></li>
@@ -66,9 +67,9 @@ const Footer = () => {
                         </div>
                 </div>
                 <div className="row footer-top-row2">
-                        <div className="col-md-6">
-                            <ul className="left-inner d-flex align-items-center justify-content-between">
-                                <li><Link to="/"><img src={FooterLogo} alt="logo" /></Link></li>
+                        <div className="col-lg-7 col-md-12 mt-lg-1">
+                            <ul className="left-inner">
+                                <li><Link to="/"><img src={FooterLogo} alt="logo" style={{ width:'140px'}} /></Link></li>
                                 <li className="d-flex align-items-center">
                                     <span>Call Us:</span>
                                     <Link>0170000000</Link>
@@ -79,11 +80,11 @@ const Footer = () => {
                                 </li>
                             </ul>
                         </div>
-                    <div className="col-md-6">
-                            <div className="right-inner d-flex align-items-center justify-content-between">
+                    <div className="col-lg-4 col-md-12 mt-lg-1 mt-md-3 mt-1 ms-md-auto">
+                            <div className="right-inner">
                             <Link to="/"><img src={FooterIcon} alt="img" /></Link>
                             <ul className="footer-social d-flex align-items-center">
-                                <li><Link to="/"><i className="fab fa-facebook"></i></Link></li>
+                                <li><Link to="/"><i className="fa fa-facebook-f"></i></Link></li>
                                 <li><Link to="/"><i className="fab fa-instagram"></i></Link></li>
                                 <li><Link to="/"><i className="fab fa-linkedin"></i></Link></li>
                             </ul>
@@ -91,7 +92,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="footer-bottom d-flex align-items-center justify-content-center">
+            <div className="footer-bottom">
                 <span>Copyright <span className="cpy-symbol">&copy;</span> 2021 CWC. All rights reserved.</span>
                 <Link to="/">Privacy Policy</Link>
                 <Link to="/">Terms and Condition</Link>
