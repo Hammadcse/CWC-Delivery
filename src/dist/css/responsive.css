@@ -39,6 +39,7 @@
         font-weight: 600;
         margin: 0;
         padding: 10px 15px !important;
+        display: block;
     }
     .active.nav-link {
         border-radius: 5px;
@@ -129,6 +130,53 @@
     .footer-bottom {
         flex-direction: column;
     }
+    /* About us page starts */
+    #about-us .about-baner h4 {
+	font-size: 1.6rem;
+    }
+    #about-us .about-content h6 {
+	font-size: 1rem;
+	margin-bottom: 1.3rem;
+    }
+    #about-us .about-content {
+	padding: 3rem 0;
+    }
+    #about-us .about-content p {
+	font-size: 0.9rem;
+    }
+    /* About us page ends */
+
+    /* Charges page starts */
+    #charges .charges-baner img {
+	object-fit: cover;
+	margin-bottom: 2rem;
+	height: 200px;
+    }
+    #charges .heading h2 {
+	margin-bottom: 2rem;
+    }
+    .charges-tab-wrapper ul.nav-tabs {
+	margin-bottom: 0 !important;
+    }
+    .charges-tab-wrapper .nav-tabs .nav-link {
+	font-size: 1rem;
+	margin-bottom: 1.5rem;
+	padding: 0.8rem !important;
+	border: none !important;
+	border-radius: 6px;
+	display: inline-block;
+	text-align: center;
+    }
+    .charges-tab-wrapper .nav-tabs .nav-link.active {
+	background: #E92236;
+	color: #ffffff !important;
+    border: none !important;
+    }
+    .charges-tab-wrapper .tab-content .table {
+	display: block;
+	overflow-x: scroll;
+    }
+    /* Charges page ends */
 }
 @media(max-width:600px){
     

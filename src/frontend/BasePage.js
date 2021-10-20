@@ -6,7 +6,12 @@ import {
       Redirect
     } from "react-router-dom";
 import Home from "./modules/Home/Home";
-import Charges from './modules/Charges/Charges.js'
+import AccountsInfo from "./modules/InfoDetails/AccountsInfo";
+import CompanyInfo from "./modules/InfoDetails/CompanyInfo";
+import Login from "./modules/Login/Login";
+import Charges from './modules/Charges/Charges';
+import AboutUs from "./modules/About/AboutUs";
+
 
 const BasePage = () => {
       return (
@@ -14,8 +19,13 @@ const BasePage = () => {
                   <Switch>
                         <Route exact path="/" component={Home} />
                         <Route exact path="/home" component={Home} />
+                        <Route exact path="/login" component={Login} />
+                        <Route exact path="/about-us" component={AboutUs} />
+                        <Route exact path="/sign-up" component={CompanyInfo} />
+                        <Route exact path="/company-info" component={CompanyInfo} />
+                        <Route exact path="/accounts-info" component={AccountsInfo} />
                         <Route exact path="/charges" component={Charges} />
-                        <Redirect to="/" /> 
+                        <Redirect to="/" component={Home}/> 
                   </Switch>
             </Router>
       );

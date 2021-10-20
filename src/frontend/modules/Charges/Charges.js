@@ -5,11 +5,11 @@ import Footer from '../Footer/Footer'
 
 export const Charges = () => {
     return (
-        <>
+        <div>
             <Header/>
             <DeliveryCharge />
             <Footer />
-        </>
+        </div>
     )
 }
 export default Charges;

@@ -35,14 +35,20 @@ ul{
 a{
 	text-decoration: none !important;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-ul{
-	margin-bottom: 0;
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .form-control:focus {
 	box-shadow: none !important;
-	border: none !important;
 }
 .form-check-input:focus {
 	outline: 0;
@@ -81,9 +87,6 @@ ul{
 	border-bottom: 1px solid #eee;
 	box-shadow: 0px 0px 10px #d6d6d675;
 }
-.nav-item.dropdown {
-	padding-right: 15px;
-}
 .header-main .nav-link {
 	color: #242020;
 	font-size: 1.1rem;
@@ -91,9 +94,19 @@ ul{
 	text-transform: uppercase;
 	margin: 0 8px;
 	padding-top: 35px;
+	display: inline-block;
+}
+#responsive-navbar-nav {
+	margin-top: -20px;
+	margin-bottom: 8px;
+}
+.header-main .nav-link:last-of-type {
+	margin-right: 0px !important;
+}
+.header-main .nav-item:hover .nav-link{
+	color: var(--red-color);
 }
 .header-main .nav-link:last-child {
-	padding-right: 0px !important;
 	margin-right: 0px !important;
 }
 #responsive-navbar-nav {
@@ -112,9 +125,12 @@ ul{
 #responsive-navbar-nav .dropdown-menu {
 	position: absolute;
 	width: 400px;
-	padding: 15px;
+	padding: 0 15px 10px !important;
 	right: 0 !important;
 	left: auto;
+	box-shadow: 0 10px 10px 3px rgba(0,0,0,.04);
+	top: 110%;
+	border: 1px solid #eee;
 }
 #responsive-navbar-nav .dropdown-menu a {
 	color: var(--red-color);
@@ -489,6 +505,33 @@ ul{
 }
 /* Footer section ends */
 
+/* Company Info */
+.custom-form-control {
+	min-height: 45px !important;
+	border: 1px solid #DDE2E2 !important;
+	background: #DDE2E2 !important;
+}
+.form-label {
+	font-weight: 600;
+}
+.info-right-img {
+	border-radius: 4px;
+}
+.custom-btn {
+	color: var(--white-color) !important;
+	background: var(--red-color) !important;
+	border-color: var(--red-color) !important;
+	box-shadow: none !important;
+	font-size: 1.2rem !important;
+	font-weight: 600 !important;
+	padding: 10px 40px !important;
+	border-radius: 5px;
+	display: inline-block;
+}
+.custom-btn.back-btn{
+	background: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
+}
 /************* Charges page starts ***********/
 #charges .charges-baner img {
 	width: 100%;
@@ -504,16 +547,23 @@ ul{
 	justify-content: space-around;
 	border: 0;
 }
-.charges-tab-wrapper .nav-tabs .nav-link.active {
+.charges-tab-wrapper .nav-tabs .nav-link {
 	color: #000000 !important;
 	background-color: transparent;
 	border: none;
 	font-weight: 700;
 	font-size: 1.2rem;
-	border-bottom: 3px solid #E92236;
+	border-bottom: 3px solid transparent;
 	border-radius: 0;
 	padding: 0;
 	padding-bottom: 0.4rem;
+	transition: .2s all ease-in-out;
+}
+.charges-tab-wrapper .nav-tabs .nav-link.active {
+	border-bottom: 3px solid #E92236;
+}
+.charges-tab-wrapper .nav-tabs .nav-link:hover {
+	border-bottom: 3px solid #E92236;
 }
 .charges-tab-wrapper .tab-content table tr td {
 	font-weight: 600;
@@ -525,3 +575,35 @@ ul{
 	margin-bottom: 2.5rem;
 }
 /************* Charges page ends ***********/
+
+/************* About Us page starts ***********/
+#about-us .about-baner{
+	background-image: url(../images/about-us/about-us.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	width: 100%;
+}
+#about-us .about-baner h4 {
+	color: #ffffff;
+	font-size: 2rem;
+	margin-bottom: 0;
+	font-weight: 700;
+	padding: 4rem 0;
+}
+#about-us .about-content {
+	padding: 4rem 0;
+}
+#about-us .about-content h6 {
+	font-size: 1.3rem;
+	color: #000000;
+	font-weight: 600;
+	line-height: 1.8rem;
+	margin-bottom: 2rem;
+}
+#about-us .about-content p {
+	font-size: 1.2rem;
+	color: #000000;
+	margin-bottom: 0;
+}
+/************* About Us page ends ***********/
